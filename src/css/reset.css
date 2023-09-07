@@ -9,6 +9,15 @@ p {
   margin: 0;
 }
 
+body {
+  display: block;
+  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -32,4 +41,28 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

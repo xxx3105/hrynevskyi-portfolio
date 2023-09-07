@@ -1,0 +1,129 @@
+.manage-animation {
+  animation-play-state: running !important;
+}
+
+.cont {
+  height: 100px;
+  width: 35px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+}
+
+.circles {
+  height: 80px;
+  width: 80px;
+  background-image: url(../img/mech1.svg);
+  background-size: cover;
+  position: absolute;
+  left: 7px;
+  top: 27px;
+  overflow: hidden;
+  fill: red !important;
+  stroke: red !important;
+}
+
+.circles-two {
+  background-image: url(../img/mech5.svg);
+}
+.circles-three {
+  background-image: url(../img/mech3.svg);
+}
+.circles-four {
+  background-image: url(../img/mech5.svg);
+}
+.circles-five {
+  background-image: url(../img/mech3.svg);
+}
+.circles-six {
+  background-image: url(../img/mech1.svg);
+}
+
+#no4 {
+  left: 84px;
+  top: 9px;
+  animation-name: crcA1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 25px;
+  height: 25px;
+  animation-play-state: paused;
+}
+
+#no3 {
+  left: 82px;
+  top: 30px;
+  animation-name: crcA1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 25px;
+  height: 25px;
+  animation-play-state: paused;
+}
+
+#no1 {
+  left: 60px;
+  top: 40px;
+  animation-name: crcA1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 30px;
+  height: 30px;
+  animation-play-state: paused;
+}
+
+#no2 {
+  left: 30px;
+  top: 30px;
+  animation-name: crcA2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 35px;
+  height: 35px;
+  animation-play-state: paused;
+}
+
+#no5 {
+  left: 14px;
+  top: 53px;
+  animation-name: crcA1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 25px;
+  height: 25px;
+  animation-play-state: paused;
+}
+#no6 {
+  left: 25px;
+  top: 70px;
+  animation-name: crcA1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 30px;
+  height: 30px;
+  animation-play-state: paused;
+}
+
+@keyframes crcA1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes crcA2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

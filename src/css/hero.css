@@ -1,0 +1,12 @@
+.hero-main-wurzel {
+  width: 0;
+  height: 200px;
+  margin-left: 60px;
+  border-left: solid 6px rgb(187, 23, 23);
+  border-right: solid 6px gray;
+  z-index: 5;
+}
+
+.hero-bg {
+  background-color: white;
+}

@@ -1,4 +1,50 @@
+.header-linx-red {
+  border-left: solid 6px rgb(187, 23, 23);
+  position: fixed;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.header-mech {
+  width: 120px; /* Ширина элемента будет 20% от родительского контейнера */
+  height: 150px; /* Высота элемента будет 60% от родительского контейнера */
+  z-index: 1;
+  background-image: url(../img/mechlogo25.svg);
+  background-size: contain;
+  background-position: center; /* Центрирование фона */
+  background-repeat: no-repeat; /* Отключение повторения фона */
+  position: absolute;
+  top: -12px;
+  left: -20px;
+  border-radius: 15px;
+}
+
+.header-name {
+  font-family: 'Encode Sans', sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 5px;
+  user-select: none;
+  margin-left: 110px;
+}
+
+.header-text {
+  margin-left: 110px;
+  width: 175px;
+  color: white;
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  white-space: wrap; /* не переносить текст на другую строку */
+  overflow: hidden; /* скрываем переполнение контентом */
+  /* border-right: 3px solid white; рисуем курсор */
+  animation: cursor 0.75s step-end infinite, printed_text 2s steps(29);
+  user-select: none;
+}
+
 .header {
+  height: 80px;
   padding: 20px 0;
 }
 
@@ -18,4 +64,124 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
+}
+
+header {
+  position: relative;
+}
+
+.header-top-part {
+  display: flex;
+  right: 0;
+
+  /* position: absolute; */
+}
+
+.header-hamburger-icon {
+  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+  margin-left: 0px;
+  margin-top: 24px;
+  z-index: 1;
+}
+
+.header-kreuz-icon {
+  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+  right: 3px;
+  top: 44px;
+  z-index: 4;
+  position: absolute;
+  display: none;
+}
+
+.header-flex {
+  color: aliceblue;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.header-list-nav {
+  justify-content: center;
+  font-size: 25px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: rgb(187, 23, 23);
+  position: absolute;
+  right: -25px;
+  height: 200px;
+  top: 0;
+  width: 0;
+  opacity: 90%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  z-index: 3;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-list-nav-hider {
+  width: 180px;
+  transition: width 0.5s ease;
+}
+
+.header-list-item {
+  display: none;
+  font-family: 'Encode Sans', sans-serif;
+  user-select: none;
+}
+
+.head-item-gap {
+  gap: 30px;
+  transition: gap 0.5s ease;
+}
+
+/* //animated text */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@keyframes cursor {
+  0% {
+    border-color: white;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes printed_text {
+  from {
+    width: 0;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Здесь можно настроить цвет и прозрачность */
+  z-index: 2; /* Установите z-index, чтобы бекдрап был над другими элементами */
 }
